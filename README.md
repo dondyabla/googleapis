@@ -7,6 +7,11 @@ Google APIs and help you to utilize them more efficiently. You can also
 use these definitions with open source tools to generate client
 libraries, documentation, and other artifacts.
 
+API client libraries can be built directly from files in this repo using
+[Artman](https://github.com/googleapis/artman). The latest generation status can
+be tracked [here](https://circleci.com/gh/googleapis/googleapis) which currently
+has status [![CircleCI](https://circleci.com/gh/googleapis/googleapis.svg?style=svg)](https://circleci.com/gh/googleapis/googleapis).
+
 For more details on all Google APIs and developer tools, see the [Google
 Developers](https://developers.google.com/products/) site.
 
@@ -22,11 +27,11 @@ define the API interface and the structure of the payload messages. The
 same interface definition is used for both REST and RPC versions of the
 API, which can be accessed over different wire protocols.
 
-There are two ways of accessing Google APIs:
+There are several ways of accessing Google APIs:
 
-1.  JSON over HTTP: You can access Google APIs directly using JSON
+1.  JSON over HTTP: You can access all Google APIs directly using JSON
 over HTTP, using
-[Google API client libraries](https://developers.google.com/api-client-libraries)
+[Google API client library](https://developers.google.com/api-client-library)
 or third-party API client libraries.
 
 2.  Protocol Buffers over gRPC: You can access Google APIs published
@@ -35,10 +40,19 @@ a high-performance binary RPC protocol over HTTP/2. It offers many
 useful features, including request/response multiplex and full-duplex
 streaming.
 
+3.  [Google Cloud Client Libraries](https://cloud.google.com/apis/docs/cloud-client-libraries):
+You can use these libraries to access Google Cloud APIs. They are based
+on gRPC for better performance and provide idiomatic client surface for
+better developer experience.
+
 ## Discussions
 
-Please use GitHub Issues to discuss bugs and features related to this
-repository.
+This repo contains copies of Google API definitions and related files.  For
+discussions or to raise issues about
+[Google API client libraries](https://github.com/googleapis),
+[GRPC](https://github.com/grpc) or
+[Google Cloud Client Libraries](https://github.com/googlecloudplatform) please
+refer to the repos associated with each area.
 
 ## Repository Structure
 
